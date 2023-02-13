@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import "./splash.dart";
+import './Homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       //     children: const [HomePage()],
       //   ),
       // ),
-      home: const Splash(),
+      home: Homepage(),
     );
   }
 }
