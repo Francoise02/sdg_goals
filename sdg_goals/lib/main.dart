@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       //     children: const [HomePage()],
       //   ),
       // ),
-      home: Homepage(),
+      home: const Splash(),
     );
   }
 }
