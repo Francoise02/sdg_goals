@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import './auth/login.dart';
+import './auth/SignUp.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -15,12 +15,12 @@ class _SplashState extends State<Splash> {
   void initState() {
     super.initState();
     Timer(
-      const Duration(seconds: 5),
+      const Duration(seconds: 3),
       (() {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(
-            builder: (context) => const Login(),
+            builder: (context) => const SignUp(),
           ),
         );
       }),
@@ -38,10 +38,10 @@ class _SplashState extends State<Splash> {
         height: height,
         child: Center(
           child: Container(
-            margin: const EdgeInsets.fromLTRB(0, 100, 0, 0),
+            margin: const EdgeInsets.fromLTRB(0, 250, 0, 0),
             child: Column(
               // ignore: prefer_const_literals_to_create_immutables
-              children: [
+              children: <Widget>[
                 const Text(
                   "Impact Chain",
                   style: TextStyle(
@@ -49,6 +49,7 @@ class _SplashState extends State<Splash> {
                       fontWeight: FontWeight.bold,
                       color: Colors.white),
                 ),
+                Image.asset("assets/image2.png")
               ],
             ),
           ),
