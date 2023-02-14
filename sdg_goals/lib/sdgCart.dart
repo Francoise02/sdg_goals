@@ -14,13 +14,16 @@ class sdgCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(20),
-      // height: 180,
-      // width: 160,
-      decoration: BoxDecoration(
-          color: sdg.color, borderRadius: BorderRadius.circular(16)),
-      child: Hero(tag: "${sdg.sdgNum}", child: Image.asset(sdg.image)),
+    return GestureDetector(
+      onTap: press,
+      child: Container(
+        padding: EdgeInsets.all(20),
+        // height: 180,
+        // width: 160,
+        decoration: BoxDecoration(
+            color: sdg.color, borderRadius: BorderRadius.circular(16)),
+        child: Hero(tag: "${sdg.sdgNum}", child: Image.asset(sdg.image)),
+      ),
     );
   }
 }
