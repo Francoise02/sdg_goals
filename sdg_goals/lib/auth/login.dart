@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'SignUp.dart';
+import '../Homepage.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -36,7 +36,7 @@ class LoginState extends State<Login> {
             width: width,
             height: height,
             child: Container(
-              margin: const EdgeInsets.fromLTRB(0, 200, 0, 0),
+              margin: const EdgeInsets.fromLTRB(0, 100, 0, 0),
               child: Form(
                 key: _formKey,
                 child: Column(
@@ -91,7 +91,7 @@ class LoginState extends State<Login> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const SignUp(),
+                                builder: (context) => Homepage(),
                               ),
                             );
                           }
