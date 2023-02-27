@@ -6,6 +6,7 @@ import 'package:sdg_goals/sdgCart.dart';
 //import './bottomNavBar.dart';
 import './models/sdgs.dart';
 import './singleSdgBody.dart';
+import 'Feedpage.dart';
 
 class Homepage extends StatelessWidget {
   @override
@@ -31,7 +32,9 @@ class Homepage extends StatelessWidget {
             icon: const Icon(Icons.person_outlined),
             color: Color(0xFF5D2B5C),
             iconSize: 30,
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => FeedPage() ));
+            },
           ),
         ],
       ),
